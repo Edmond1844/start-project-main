@@ -1,0 +1,79 @@
+// миксины
+.reset-styles-ol () {
+    ul, li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.reset-indentation () {
+    margin: 0;
+    padding: 0;
+}
+
+.reset-text-decoration () {
+    text-decoration: none;
+}
+
+.flex-between () {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container () {
+    width: 330px; 
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+        width: 886px; 
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 1280px;
+    }
+}
+
+.btn () {
+    background-color: @green;
+    border-radius: 5px;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    font-family: @second-font;
+
+    border: none;
+
+    color: @white;
+
+
+    &:hover {
+        background-color: @green-darker;
+    }
+}
+
+.form-text () {
+    border-radius: 5px;
+
+    outline:none;
+    
+    font-size: 13px;
+
+    &::placeholder {
+        font-family: @second-font;
+    }
+}
+
+.form-checkbox () {
+    -webkit-appearance: none;
+    appearance: none;
+}
