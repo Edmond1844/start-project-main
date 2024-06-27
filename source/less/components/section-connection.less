@@ -1,0 +1,198 @@
+.section-connection {
+    height: 740px;
+
+    padding: 26px 14px 0 8px;
+
+    background-image: url('../img/Header-Bg-Momile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: @brown;
+}
+
+.section-connection__container {
+    .container ();
+
+    padding: 113px 0;
+}
+
+.section-connection__title {
+    .reset-indentation ();
+    
+    font-family: @main-font;
+
+    color: @white;
+    
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.section-connection__subtitle {
+    .reset-indentation ();
+
+    font-family: @second-font;
+    font-size: 14px;
+
+    color: @gray;
+    
+    line-height: 18px;
+    margin-top: 17px;
+}
+
+
+/* форма для текста */
+
+.section-connection__form {
+    display: grid;
+    grid-template-columns: 175px 158px;
+    grid-template-rows: 38px;
+
+    margin-top: 49px;
+}
+
+.section-connection__input {
+    .form-text ();
+    background-color: @transparent-black;
+    color: @white;
+
+    border: 1px solid @transparenrgba-white;
+    border-radius: 5px 0 0 5px;
+}
+
+.section-connection__btn {
+    .btn ();
+    border-radius: 0 5px 5px 0;
+
+    font-size: 10px;
+}
+
+/* чексбокс */
+
+.section-connection__form-checkbox {
+    position: relative;
+    margin-top: 12px;
+    margin-left: 22px;
+    margin-bottom: 50px;
+}
+
+.section-connection__checkbox {
+    .form-checkbox ();
+    position: absolute;
+
+    &:checked + .section-connection__lable::after {
+        opacity: 1;
+    }
+}
+
+.section-connection__lable {
+    display: block;
+
+    padding-left: 5px;
+
+    font-family: @second-font;
+    font-size: 11px;
+
+    cursor: pointer;
+
+    color: @gray-darker;
+
+    width:200px;
+    
+    
+    &::before {
+        content: '';
+        display: block;
+        width: 17px;
+        height: 17px;
+
+        border: 1px solid @gray-darker;
+        border-radius: 2px;
+
+        position: absolute;
+        top: 5px;
+        left: -21px;
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 17px;
+        height: 17px;
+
+        background: url('../img/icons/check.svg') no-repeat;
+        background-size: 17px 17px;
+        opacity: 0;
+        
+        position: absolute;
+        top: 5px;
+        left: -20px;
+        z-index: 2;
+        
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .section-connection {
+        background-image: url('../img/Header-Bg-Tablet.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .section-connection__title {
+        font-size: 38px;
+        line-height: 55px;
+    
+        span {
+            border-bottom: 1px solid @green-darker;
+        }
+    }
+    
+    .section-connection__subtitle {
+        font-size: 16px;
+    
+        line-height: 48px;
+    }
+    
+    /* форма для текста */
+    
+    .section-connection__form {
+        grid-template-columns: 226px 205px;
+    
+    }
+    
+    .section-connection__form-checkbox {
+        margin-top: 12px;
+        margin-left: 45px;
+    }
+    
+    .section-connection__lable {
+        margin-top: 30px;
+    
+        width: 100%;
+    }
+}
+
+@media (min-width: @desktop-width) {
+
+    .section-connection {
+        background-image: url('../img/Header-Bg-Desktop.jpg');
+    }
+
+    .section-connection__container {
+        padding: 294px 0;
+    }
+
+    .section-connection__title {
+        font-size: 54px;
+
+        line-height: 60px;
+    }
+
+    .section-connection__subtitle {
+        font-size: 20px;
+
+        margin-top: 38px;
+    }
+}
