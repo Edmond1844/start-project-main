@@ -38,7 +38,7 @@
     }
 }
 
-.btn () {
+.btn-link () {
     background-color: @green;
     border-radius: 5px;
 
@@ -61,6 +61,26 @@
     }
 }
 
+.btn () {
+    box-sizing: border-box;
+
+    background-color: @green;
+
+    width: 200px;
+    height: 61px;
+
+    color: @white;
+
+    display: inline-block;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 5px;
+}
+
 .form-text () {
     border-radius: 5px;
 
@@ -77,3 +97,17 @@
     -webkit-appearance: none;
     appearance: none;
 }
+
+.switch () {
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 50%;
+
+    background-color: @black;
+
+    border: none;
+
+    cursor: pointer;
+}
+

@@ -1,5 +1,5 @@
 .section-connection {
-    height: 740px;
+    height: 691px;
 
     padding: 26px 14px 0 8px;
 
@@ -60,7 +60,7 @@
 }
 
 .section-connection__btn {
-    .btn ();
+    .btn-link ();
     border-radius: 0 5px 5px 0;
 
     font-size: 10px;
@@ -134,15 +134,21 @@
 
 @media (min-width: @tablet-width) {
     .section-connection {
+        height: 796px;
+
         background-image: url('../img/Header-Bg-Tablet.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
+    .section-connection__container {
+        padding: 250px 0;
+    }
+
     .section-connection__title {
-        font-size: 38px;
-        line-height: 55px;
+        font-size: 44px;
+        line-height: 57px;
     
         span {
             border-bottom: 1px solid @green-darker;
@@ -158,7 +164,10 @@
     /* форма для текста */
     
     .section-connection__form {
-        grid-template-columns: 226px 205px;
+        grid-template-columns: 228px 205px;
+        grid-template-rows: 49px;
+
+        margin-top: 15px;
     
     }
     
@@ -175,13 +184,12 @@
 }
 
 @media (min-width: @desktop-width) {
-
     .section-connection {
         background-image: url('../img/Header-Bg-Desktop.jpg');
     }
 
     .section-connection__container {
-        padding: 294px 0;
+        padding: 253px 0;
     }
 
     .section-connection__title {
@@ -193,6 +201,26 @@
     .section-connection__subtitle {
         font-size: 20px;
 
-        margin-top: 38px;
+        margin-top: 10px;
+    }
+
+    .section-connection__form {
+        margin-top: 29px;
+        margin-left: 10px;
+
+        grid-template-columns: 252px 210px;
+    }
+
+    .section-connection__form-checkbox {
+        margin-top: -11px;
+        margin-left: 62px;
+    }
+
+    .section-connection__lable {
+        font-size: 13px;
+
+        span {
+            border-bottom: 1px solid @gray-darker;
+        }
     }
 }

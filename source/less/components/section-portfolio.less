@@ -1,5 +1,7 @@
 .section-portfolio{
     background-color: @white;
+
+    padding: 0 14px 30px;
 }
 
 .section-portfolio__container {
@@ -7,8 +9,6 @@
 }
 
 .section-portfolio__container-video {
-    background-color: @white;
-
     height: 69px;
 
     display: flex;
@@ -18,22 +18,27 @@
 }
 
 .section-portfolio__button {
-    .btn ();
-
     background-color: @gray;
 
     width: 184px;
     height: 184px;
 
+    z-index: 3;
+
     border-radius: 50%;
 
-    margin-top: -115px;
+    margin-top: -123px;
+
+    cursor: pointer;
+
+    border: none;
 }
 
 .section-portfolio__container-phone {
     background-color: @black;
 
     padding: 10px 0;
+    margin-bottom: 70px;
 
     text-align: center;
 }
@@ -42,7 +47,6 @@
     .reset-text-decoration ();
 
     display: inline-block;
-    margin-top: 10px;
 
     font-family: @second-font;
     font-size: 16px;
@@ -55,12 +59,10 @@
 }
 
 .section-portfolio__work {
-    background-color: @white;
-
     position: relative;
     overflow: hidden;
 
-    padding: 74px 10px 30px;
+    margin-top: 11px;
 
     z-index: 2;
 }
@@ -94,7 +96,7 @@
     font-weight: 500;
     font-size: 13px;
 
-    margin-top: 19px;
+    margin-top: 11px;
     margin-bottom: 9px;
 
     color: @light-black;
@@ -102,7 +104,7 @@
 
 .section-portfolio__text {
     font-family:@second-font; 
-    font-size: 11px;
+    font-size: 12px;
 
     color: @gray-darker;
 
@@ -113,13 +115,20 @@
 @media (min-width: @tablet-width) {
 
     .section-portfolio__work {
-        padding-top: 119px;
-    }
+        padding-top: 174px;
+    } 
+
     .section-portfolio__flex {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
 
+    .section-portfolio__button {
+        width: 214px;
+        height: 214px;
+
+        margin-top: -11px;
     }
     
     .section-portfolio__container-phone {
@@ -131,12 +140,8 @@
     }
 
     .section-portfolio__wrapper {
-        display: grid;
-        grid-template-columns: 426px;
-        grid-template-rows: max-content min-content min-content;
-        grid-row-gap: 10px;
-        
-        margin-right: 7px;
+        width: 426px;
+
         margin-bottom: 43px;
     }
 
@@ -148,8 +153,8 @@
         display: initial;
 
         position: absolute;
-        top: 0;
-        right: 500px;
+        top: 18px;
+        right: 535px;
     
         z-index: -1;
     }
@@ -160,7 +165,9 @@
 
     .section-portfolio__title {
         font-size: 16px;
-        margin: 0;
+
+        margin-top: 16px;
+        margin-bottom: 13px;
     }
 
     .section-portfolio__text {
@@ -171,12 +178,14 @@
 
 @media (min-width: @desktop-width) {
     .section-portfolio__wrapper {
-        grid-template-columns: 298px;
+        width: 298px;
 
-        margin: 0;
+        margin-right: 29px;
     }
 
     .section-portfolio__flex  {
+        flex-wrap: nowrap;
+
         div:nth-child(2) { 
             margin-top: 80px;
         }
@@ -191,7 +200,7 @@
     }
 
     .section-portfolio__work {
-        padding-top: 176px;
+        padding-top: 233px;
     }
 
     .section-portfolio__decor {
@@ -203,5 +212,13 @@
 
     .section-portfolio__img-desktop {
         display: initial;
+    }
+
+    .section-portfolio__button {
+        width: 237px;
+        height: 237px;
+
+        margin-bottom: 32px;
+        margin-left: 20px;
     }
 }
