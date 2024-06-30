@@ -1,5 +1,5 @@
 .section-work {
-    background-color: @gray;
+    background: linear-gradient(@gray, @white);
 }
 
 .section-work__container {
@@ -98,14 +98,18 @@
 }
 
 @media (min-width: @tablet-width) {
-    .section-work__container {
-        padding: 69px 0;
+    .section-work {
+        background-color: @gray;
     }
 
     .section-work__wrapper {
         width: 420px;
 
         margin-right: 49px;
+    }
+
+    .section-work__container {
+        padding-top: 63px;
     }
 
     .section-work__title {
@@ -144,6 +148,9 @@
         font-family: @second-font;
         font-weight: 400;
         font-size: 14px;
+
+        width: 205px;
+        height: 60px;
 
         margin-right: 26px;
     }

@@ -44,12 +44,11 @@
 
     text-transform: uppercase;
     text-align: center;
-    font-size: 13px;
     text-decoration: none;
 
     cursor: pointer;
 
-    font-family: @second-font;
+    font-family: @main-font;
 
     border: none;
 
@@ -66,11 +65,6 @@
 
     background-color: @green;
 
-    width: 200px;
-    height: 61px;
-
-    color: @white;
-
     display: inline-block;
 
     text-align: center;
@@ -85,12 +79,15 @@
     border-radius: 5px;
 
     outline:none;
-    
-    font-size: 13px;
 
     &::placeholder {
-        font-family: @second-font;
+        font-family: @main-font;
     }
+}
+
+.style-input-text () {
+    border: 0;
+    border: 1px solid @transparent-black;
 }
 
 .switch () {
@@ -106,3 +103,25 @@
     cursor: pointer;
 }
 
+@media (min-width: @tablet-width) {
+    .checkbox__lable {
+        margin-top: 30px;
+        
+        width: 100%;
+    }
+}
+
+
+@media (min-width: @desktop-width) {
+    .checkbox {
+        padding-left: 41px;
+    }
+
+    .checkbox__lable {
+        font-size: 13px;
+    }
+
+    span {
+        border-bottom: 1px solid @gray-darker;
+    }
+}

@@ -1,11 +1,189 @@
 .section-records {
-    background-color: @white-darker;
+    background: linear-gradient(@gray 50%, @white 50%);
 
-    h2 {
-        margin: 0;
-    }
+    margin-top: 40px;
 }
 
 .section-records__container {
     .container ();
+
+    padding-top: 65px;
+}
+
+.section-records__form {
+    margin-top: 25px;
+}
+
+.section-records__input {
+    .style-input-text ();
+    .form-text ();
+
+    width: 332px;
+    height: 51px;
+
+    margin-bottom: 16px;
+
+    color: @light-black;
+
+    display: block;
+
+    padding-left: 20px;
+}
+
+
+.section-records__title {
+    margin: 0;
+
+    line-height: 31px;
+
+    font-family: @main-font;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.section-records__subtitle {
+    font-family: @main-font;
+    font-weight: 400;
+    font-size: 14px;
+
+    margin: 0;
+
+    line-height: 39px;
+}
+
+.section-records__btn {
+    .btn ();
+
+    width: 332px;
+    height: 56px;
+
+    font-family: @main-font;
+    font-weight: 500;
+    font-size: 15px;
+
+    line-height: 120%;
+
+    color: @white-darker;
+
+    margin-top: 22px;
+}
+
+.section-records__specialist-card {
+    position: relative;
+
+    margin-top: 60px;
+}
+
+.section-records__wrapper-card {
+    position: absolute;
+    bottom: 115px;
+    // left: -16;
+}
+
+.section-records__human-tablet {
+    display: none;
+}
+
+.section-records__specialists {
+    width: 204px;
+    height: 81px;
+
+    background-color: @light-transparent-black;
+    
+    padding: 14px 5px 6px 18px;
+}
+
+.section-records__name {
+    font-family: @main-font;
+    font-weight: 500;
+    font-size: 16px;
+
+    line-height: 123%;
+
+    margin-top: 0;
+    margin-bottom: 5px;
+
+    color: @white;
+    
+}
+
+.section-records__about-specialist {
+    font-family: @main-font;
+    font-weight: 400;
+    font-size: 12px;
+
+    line-height: 140%;
+
+    margin: 0;
+
+    color: @white;
+}
+
+@media (min-width: @tablet-width) {
+    .section-records__flex {
+        display: flex;
+    }
+
+    .section-records {
+        background-color: @gray;
+    }
+
+    .section-records__container {
+        height: 636px;
+    }
+
+    .section-records__wrapper-request {
+        margin-right: 28px;
+        padding-top: 110px;
+    }
+
+    .section-records__title {
+        width: 434px;
+
+        font-size: 32px;
+
+        line-height: 43px;
+    }
+
+    .section-records__wrapper-text {
+        font-size: 16px;
+    }
+
+    .section-records__input {
+        width: 434px;
+    }
+    
+    .section-records__btn {
+        width: 434px;
+
+        margin-top: 33px;
+    }
+
+    .section-records__human-mobile {
+        display: none;
+    }
+
+    .section-records__human-tablet {
+        display: initial;
+
+        margin-top: -95px;
+    }
+
+    .section-records__wrapper-card {
+        bottom: 165px;
+        left: 0;
+    }
+
+    .section-records__specialists {
+        width: 301px;
+        height: 97px;
+    }
+
+    .section-records__name {
+        font-size: 25px;
+    }
+
+    .section-records__about-specialist {
+        font-size: 12px;
+    }
 }
