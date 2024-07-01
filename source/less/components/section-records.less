@@ -84,6 +84,10 @@
     display: none;
 }
 
+.section-records__human-desktop {
+    display: none;
+}
+
 .section-records__specialists {
     width: 204px;
     height: 81px;
@@ -134,7 +138,6 @@
 
     .section-records__wrapper-request {
         margin-right: 28px;
-        padding-top: 110px;
     }
 
     .section-records__title {
@@ -147,7 +150,10 @@
 
     .section-records__wrapper-text {
         font-size: 16px;
+
+        padding-top: 110px;
     }
+    
 
     .section-records__input {
         width: 434px;
@@ -169,8 +175,13 @@
         margin-top: -95px;
     }
 
+    .section-records__human-desktop {
+        display: none;
+    }
+
     .section-records__wrapper-card {
         bottom: 165px;
+
         left: 0;
     }
 
@@ -185,5 +196,46 @@
 
     .section-records__about-specialist {
         font-size: 12px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .section-records__flex {
+        justify-content: space-between;
+    }
+
+    .section-records__wrapper-text {
+        padding-top: 55px;
+        padding-left: 20px;
+    }
+    
+    .section-records__title {
+        width: 625px;
+
+        font-size: 44px;
+
+        line-height: 54px;
+    }
+
+    .section-records__subtitle {
+        font-size: 16px;
+    }
+
+    .section-records__form {
+        margin-left: 20px;
+    }
+
+    .section-records__human-tablet {
+        display: none;
+    }
+
+    .section-records__human-desktop { 
+        display: initial;
+
+        margin-top: -165px;
+    }
+
+    .section-records__wrapper-card {
+        bottom: 195px;
     }
 }
