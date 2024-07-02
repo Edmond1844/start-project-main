@@ -1,7 +1,7 @@
 .section-connection {
     height: 691px;
 
-    padding: 26px 14px 0 8px;
+    padding: 140px 10px;
 
     background-image: url('../img/Header-Bg-Momile.jpg');
     background-position: center;
@@ -12,8 +12,6 @@
 
 .section-connection__container {
     .container ();
-
-    padding: 113px 0;
 }
 
 .section-connection__title {
@@ -30,7 +28,7 @@
 .section-connection__subtitle {
     .reset-indentation ();
 
-    font-family: @second-font;
+    font-family: @main-font;
     font-size: 14px;
 
     color: @gray;
@@ -66,6 +64,12 @@
     font-size: 10px;
 }
 
+.section-connection__checkbox {
+    padding-top: 12px;
+    padding-left: 19px;
+}
+
+
 @media (min-width: @tablet-width) {
     .section-connection {
         height: 796px;
@@ -74,10 +78,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    }
 
-    .section-connection__container {
-        padding: 250px 0;
+        padding-top: 280px ;
     }
 
     .section-connection__title {
@@ -104,15 +106,39 @@
         margin-top: 15px;
     }
 
+    .section-connection__checkbox {
+        padding-top: 24px;
+        padding-left: 48px;
+    }    
+
+    .section-connection__checkbox-lable {
+        margin: 0;
+        padding-left: 12px;
+        padding-top: 5px;
+
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+        }
+        
+        &::after {
+            content: '';
+            width: 20px;
+            height: 20px;      
+        }
+    }
 }
 
 @media (min-width: @desktop-width) {
     .section-connection {
         background-image: url('../img/Header-Bg-Desktop.jpg');
+
+        padding-top: 275px;
     }
 
-    .section-connection__container {
-        padding: 253px 0;
+    .section-connection__wrapper {
+        width: 903px;
     }
 
     .section-connection__title {
@@ -132,5 +158,14 @@
         margin-left: 10px;
 
         grid-template-columns: 252px 210px;
+    }
+
+    .section-connection__checkbox {
+        margin: 0;
+        padding-left: 60px;
+    }
+
+    .section-connection__checkbox-form {
+        margin: 0;
     }
 }

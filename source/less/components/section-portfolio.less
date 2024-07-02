@@ -1,7 +1,19 @@
 .section-portfolio{
     background-color: @white;
 
-    padding: 0 14px 30px;
+    padding: 0 15px;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+.section-portfolio__decor {
+    position: absolute;
+    top: 101px;
+    right: 5px;
+
+    z-index: -3;
 }
 
 .section-portfolio__container {
@@ -48,7 +60,7 @@
 
     display: inline-block;
 
-    font-family: @second-font;
+    font-family: @main-font;
     font-size: 16px;
 
     color: @green-darker;
@@ -65,18 +77,6 @@
     margin-top: 11px;
 
     z-index: 2;
-}
-
-.section-portfolio__decor-mobile {
-    position: absolute;
-    top: 0;
-    right: 90px;
-
-    z-index: -1;
-}
-
-.section-portfolio__decor {
-    display: none;
 }
 
 .section-portfolio__wrapper {
@@ -103,7 +103,7 @@
 }
 
 .section-portfolio__text {
-    font-family:@second-font; 
+    font-family:@main-font; 
     font-size: 12px;
 
     color: @gray-darker;
@@ -113,6 +113,9 @@
 }
 
 @media (min-width: @tablet-width) {
+    .section-portfolio__decor {
+        
+    }
 
     .section-portfolio__work {
         padding-top: 174px;
@@ -135,10 +138,6 @@
         display: none;
     }
 
-    .section-portfolio__decor-mobile {
-        display: none;
-    }
-
     .section-portfolio__wrapper {
         width: 426px;
 
@@ -150,13 +149,8 @@
     }
 
     .section-portfolio__decor {
-        display: initial;
-
-        position: absolute;
-        top: 18px;
-        right: 535px;
-    
-        z-index: -1;
+        top: 102px;
+        right: 560px;
     }
 
     .section-portfolio__img-tablet {
@@ -204,7 +198,8 @@
     }
 
     .section-portfolio__decor {
-        left: 60px;
+        left: 160px;
+        top: 150px;
     }
     .section-portfolio__img-tablet {
         display: none;

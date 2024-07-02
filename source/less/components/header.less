@@ -16,8 +16,6 @@
 }
 
 .header__logo {
-    display: none;
-
     margin-right: 27px;
 }
 
@@ -67,18 +65,10 @@
         }
     }
 
-    .header__logo {
-        display: initial;
-    }
-
-    .header__logo-mobile {
-        display: none;
-    }
-
     .header__text {
         display: initial;
 
-        font-family: @second-font;
+        font-family: @main-font;
         font-size: 12px;
 
         width: 205px;
@@ -89,7 +79,7 @@
     .header__tel {
         display: initial;
 
-        font-family: @second-font;
+        font-family: @main-font;
         font-size: 16px;
 
         margin-right: 74px;
@@ -99,6 +89,9 @@
 }
 
 @media (min-width: @desktop-width) {
+    .header {
+        left: 8px
+    }
 
     .header__container {
         .container ();
