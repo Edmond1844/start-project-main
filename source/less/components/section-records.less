@@ -1,11 +1,22 @@
 .section-records {
-    background: linear-gradient(@gray 50%, @white 50%);
+    background: linear-gradient(@gray 55%, @white 45%);
 
-    padding: 75px 15px;
+    padding: 141px 15px 0;
+
+    position: relative;
+    z-index: 3;
 }
 
 .section-records__container {
     .container ();
+}
+
+.section-records__decor {
+    position: absolute;
+    top: 91px;
+    left: 44px;
+
+    z-index: -3;
 }
 
 .section-records__form {
@@ -75,19 +86,11 @@
 .section-records__wrapper-card {
     position: absolute;
     bottom: 115px;
-    // left: -16;
-}
-
-.section-records__human-tablet {
-    display: none;
-}
-
-.section-records__human-desktop {
-    display: none;
+    left: -17px;
 }
 
 .section-records__specialists {
-    width: 204px;
+    width: 219px;
     height: 81px;
 
     background-color: @light-transparent-black;
@@ -157,6 +160,14 @@
         height: 636px;
     }
 
+    .section-records__decor {
+        top: 91px;
+        left: 187px;
+
+        width: 423px;
+        height: 436px;
+    }
+
     .section-records__wrapper-request {
         padding-top: 75px;
 
@@ -167,6 +178,10 @@
         font-size: 32px;
 
         line-height: 43px;
+    }
+
+    .section-records__subtitle {
+        margin-bottom: 38px;
     }
 
     .section-records__wrapper-text {
@@ -195,24 +210,17 @@
         padding-top: 5px;
     }
 
-    .section-records__human-mobile {
-        display: none;
-    }
-
-    .section-records__human-tablet {
-        display: initial;
-
-        margin-top: -95px;
-    }
-
-    .section-records__human-desktop {
-        display: none;
-    }
-
     .section-records__wrapper-card {
         bottom: 165px;
 
         left: 0;
+    }
+
+    .section-records__human {
+        width: 434px;
+        height: 714px;
+
+        margin-top: -126px;
     }
 
     .section-records__specialists {
@@ -231,8 +239,19 @@
 
 @media (min-width: @desktop-width) {
     .section-records {
+        height: 636px;
+        
         margin-top: 146px;
     }
+
+    .section-records__decor {
+        top: 197px;
+        left: 520px;
+
+        width: 415px;
+        height: 423px;
+    }
+
     .section-records__flex {
         justify-content: space-between;
     }
@@ -241,7 +260,7 @@
         padding-top: 65px;
         padding-left: 20px;
 
-        width: 625px;
+        width: 601px;
     }
 
     .section-records__title {
@@ -252,20 +271,25 @@
 
     .section-records__subtitle {
         font-size: 16px;
+
+        margin: 0;
     }
 
-    .section-records__human-tablet {
-        display: none;
-    }
-
-    .section-records__human-desktop { 
-        display: initial;
-
-        margin-top: -165px;
+    .section-records__specialist-card {
+        width: 628px;
     }
 
     .section-records__wrapper-card {
         bottom: 195px;
+        left: 20px;
+    }
+
+    .section-records__human {
+        width: 625px;
+        height: 778px;
+
+        margin-top: -157px;
+        margin-left: 6px;
     }
 
     .section-records__checkbox {

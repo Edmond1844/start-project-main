@@ -16,6 +16,14 @@
     margin-bottom: 37px;
 }
 
+.section-work__wrapper-text-tablet {
+    display: none;
+}
+
+.section-work__wrapper-text-desktop {
+    display: none;
+}
+
 .section-work__title {
     .reset-indentation ();
 
@@ -36,14 +44,6 @@
 }
 
 .section-work__list-buttons {
-    display: none;
-}
-
-.section-work__flex-tablet {
-    display: none;
-}
-
-.section-work__flex-desktop {
     display: none;
 }
 
@@ -107,7 +107,24 @@
     .section-work__wrapper {
         width: 420px;
 
-        margin-right: 49px;
+        margin-top: 50px;
+    }
+
+    .section-work__wrapper-img {
+        width: 419px;
+        height: 406px;
+    }
+
+    .section-work__wrapper-text-mobile {
+        display: none;
+    }
+
+    .section-work__wrapper-text-tablet {
+        display: initial;
+    }
+
+    .section-work__wrapper-text-desktop {
+        display: none;
     }
 
     .section-work__title {
@@ -163,28 +180,15 @@
     }
 
     .section-work__flex {
-        display: none;
-    }
-
-    .section-work__flex-mobile {
-        display: none;
-    }
-
-    .section-work__flex-tablet {
-        display: initial;
         display: flex;
-
-        margin-top: 45px;
-    }
-
-    .section-work__flex-desktop {
-        display: none;
+        gap: 46px;
+        
     }
 
     .section-work__subtitle {
         font-size: 16px;
 
-        margin-top: 30px;
+        margin-top: 23px;
     }
 
     .section-work__text {
@@ -211,59 +215,20 @@
     }
 
     .section-work__wrapper {
-        position: relative;
-
         width: 406px;
-        margin-right: 31px;
     }
-
     
-    .section-work__flex-tablet {
-        display: none;
+    .section-work__wrapper-img {
+        width: 409px;
+        height: 461px;
     }
 
-    .section-work__flex-desktop {
+    .section-work__wrapper-text-desktop {
         display: initial;
-        display: flex;
-
-        margin-top: 44px;
     }
 
-    .section-work__wrapper-left {
-        position: relative;
+    .section-work__flex {
+        gap: 33px;
     }
 
-    .section-work__btn-left {
-        .switch ();
-
-        position: absolute;
-        top: 216px;
-        left: 17px;
-
-        svg {
-            width: 4px;
-            height: 11px;
-            
-            color: @white;
-        }
-    }
-
-    .section-work__wrapper-right {
-        position: relative;
-    }
-
-    .section-work__btn-right {
-        .switch ();
-
-        position: absolute;
-        top: 216px;
-        right: 15px;
-
-        svg {
-            width: 4px;
-            height: 11px;
-            
-            color: @white;
-        }
-    }
 }
