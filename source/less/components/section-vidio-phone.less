@@ -1,0 +1,72 @@
+.section-vidio-phone__container-video {
+    height: 69px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-vidio-phone__button {
+    background-color: @gray;
+
+    width: 184px;
+    height: 184px;
+
+    z-index: 3;
+
+    border-radius: 50%;
+
+    margin-top: -123px;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+.section-vidio-phone__container-phone {
+    background-color: @black;
+
+    padding: 8px 0;
+    margin-bottom: 70px;
+
+    text-align: center;
+}
+
+.section-vidio-phone__phone {
+    .reset-text-decoration ();
+
+    display: inline-block;
+
+    font-family: @main-font;
+    font-size: 16px;
+
+    color: @green-darker;
+
+    svg {
+        margin-right: 8px;
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .section-vidio-phone__button {
+        width: 214px;
+        height: 214px;
+
+        margin-top: -11px;
+    }
+
+    .section-vidio-phone__container-phone {
+        display: none;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .section-portfolio__button {
+        width: 237px;
+        height: 237px;
+
+        margin-bottom: 32px;
+        margin-left: 20px;
+    }
+
+}

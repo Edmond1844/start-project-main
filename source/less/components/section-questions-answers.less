@@ -10,6 +10,12 @@
     width: 341px;
 }
 
+.section-questions-answers__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
 .section-questions-answers__title {
     margin: 0;
 
@@ -43,6 +49,7 @@
 
     padding-left: 105px;
     margin-top: 28px;
+    margin-bottom: 28px;
 
     width: 332px;
     height: 91px;
@@ -72,7 +79,7 @@
     border: 1px solid @gray-darker;
     border-radius: 5px;
 
-    margin-top: 28px;
+    padding: 24px 10px 15px 25px;
 
     font-family: @main-font;
 
@@ -81,10 +88,6 @@
     &:nth-child(n+5) {
         display: none;
     }
-}
-
-.section-questions-answers__question-card {
-    padding: 24px 10px 15px 25px;
 }
 
 .section-questions-answers__title-card {
@@ -169,16 +172,16 @@
     .section-questions-answers__wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 18px;
+        column-gap: 18px;
+        row-gap: 35px;
 
-        margin-top: 31px;
+        margin-top: 58px;
     }
 
     .section-questions-answers__wrapper-card {
-        width: 434px;
-        height: 213px;
+        padding: 32px 42px 45px 34px;
 
-        margin-bottom: -12px;
+        width: 434px;
 
         &:nth-child(n+5) {
             display: initial;
@@ -228,25 +231,16 @@
         }
     }
 
-    .section-questions-answers__wrapper-card {
-        &:nth-child(n+7) {
-            display: initial;
-        }
-    }
-
     .section-questions-answers__subtitle {
         margin-top: 10px;
         margin-left: 18px;
     }
 
     .section-questions-answers__wrapper {
+        margin-top: 40px;
         padding-left: 15px;
 
         gap: 22px;
-    }
-
-    .section-questions-answers__question-card {
-        padding: 20px 16px 16px 35px;
     }
 
     .section-questions-answers__title-card {
@@ -257,9 +251,12 @@
 
     .section-questions-answers__wrapper-card {
         width: 407px;
-        height: 194px;
 
-        margin-top: 18px; 
+        padding: 13px 33px 15px 33px;
+
+        &:nth-child(n+7) {
+            display: initial;
+        }
     }
     
     .section-questions-answers__expand-button {
