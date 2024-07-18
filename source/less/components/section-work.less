@@ -198,6 +198,14 @@
         &--active {
             background-color: @green;
             color: @white;
+
+            &:not([disabled]):hover {
+                background-color: @green;
+            }
+        }
+
+        &:hover {
+            background-color: @gray;
         }
     }
 

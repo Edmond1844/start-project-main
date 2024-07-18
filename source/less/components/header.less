@@ -1,19 +1,53 @@
-.header {
+// стили для header--index
+
+.header--index {
     width: 100%;
 
     position: absolute;
     top: 31px;
     left: 0;
-    
+}
+
+.header__container--index {
+    .container ();
+    .flex-between ();
+}
+
+.header--index__nav-item {
     svg {
         color: @white;
+    }
+}
+
+.header__tel--index {
+    display: none;
+
+    .reset-text-decoration ();
+
+    margin-right: 39px;
+
+    &:hover {
+        color: @green;
+    }
+}
+
+// стили для header page
+
+.header {
+    background-color: @white;
+
+    svg {
+        color: @black;
     }
 }
 
 .header__container {
     .container ();
     .flex-between ();
+
+    padding-top: 10px;
 }
+
 
 .header__text {
     .reset-indentation ();
@@ -27,10 +61,18 @@
     display: none;
 
     margin-right: 39px;
+
+    &:hover {
+        color: @green;
+    }
 }
 
 .header__nav {
     .reset-styles-ol ();
+}
+
+.header__nav-link:hover svg {
+    color: @green;
 }
 
 .header__flex {
@@ -51,14 +93,24 @@
 }
 
 @media (min-width: @tablet-width) {
-    .header__container {
-        .container ();
+
+    // стили для header--index
+
+    .header__tel--index {
+        display: initial;
+
+        font-family: @main-font;
+        font-size: 16px;
+
+        margin-right: 55px;
+
+        color: @gray;
     }
 
-    .header {
-        svg {
-            color: @gray;
-        }
+    // стили для header page
+
+    .header__container {
+        .container ();
     }
 
     .header__logo {
@@ -83,9 +135,9 @@
         font-family: @main-font;
         font-size: 16px;
 
-        margin-right: 74px;
+        margin-right: 55px;
 
-        color: @gray;
+        color: @black;
     }
 }
 
