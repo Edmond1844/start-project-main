@@ -12,11 +12,12 @@
         <div class="header__container">
             <div class="header__flex--index">
                 <div class="header__flex-wrapper">
-                    <picture>
-                        <source type="image/svg+xml" media="(min-width: 886px)" srcset="./img/logo-dark.svg">
-                        <img class="header__logo" width="131" height="51" src="./img/logo-mobile-dark.svg" alt="логотип">
-                    </picture>
-                    <p class="header__text">премиум окна в Иркутске<br> для тех, кто ценит комфорт</p>
+                    <a href="index.html"> 
+                        <picture>
+                            <source type="image/svg+xml" media="(min-width: 886px)" srcset="./img/logo-dark.svg">
+                            <img class="header__logo" width="131" height="51" src="./img/logo-mobile-dark.svg" alt="логотип">
+                        </picture>
+                    </a>
                 </div>
             </div>
             <div class="header__flex-wrapper">
@@ -56,5 +57,86 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="section-information">
+            <div class="section-information__container">
+                <div class="section-information__wrapper">
+                    <h2 class="section-information__title">Безрамное остекление</h2>
+                    <a class="section-information__close-button" href="index.html" type="button">
+                        <img width="24" height="24" src="./img/icons/close.svg" alt="закрыть">
+                    </a>
+                    <p class="section-information__text">Изготовление и монтаж за 3 недели!</p>
+                    <p class="section-information__text">Нестандартное проектирование, панорамный вид и открытие створок за пару секунд. Система надежной защиты от непогодыдля террас, веранд, беседок и  ресторанов</p>
+                    <p class="section-information__text">Система Claroflex Pivot — панорамная стеклянная поверхность без лишних деталей. Конструкции полностью адаптированы под непростые климатические условия России</p>
+                    <ul class="section-information__list">
+                        <li class="section-information__item-text">Всесезонное использование неотапливаемых помещений: при -10℃ комфортно при наличии источников тепла</li>
+                        <li class="section-information__item-text">Мобильность: открывайте створки частично или полностью за пару секунд</li>
+                        <li class="section-information__item-text">Простота в уборке и чистке</li>
+                        <li class="section-information__item-text">Долгий срок эксплуатации</li>
+                        <li class="section-information__item-text">Им не страшны перепады температур, влажность и палящие лучи солнца</li>
+                    </ul>
+                    <div class="section-information__description-flex">
+                        <div class="section-information__description-wrapper">
+                            <h3 class="section-information__description-title">Алюминиевый профиль</h3>
+                            <p class="section-information__description-text">Не подвержен коррозии Производится в России Конструкция без лишних рам</p>
+                        </div>
+                        <div class="section-information__description-wrapper">
+                            <h3 class="section-information__description-title">Закаленное стекло</h3>
+                            <p class="section-information__description-text">Закаленное стекло толщиной 10 мм, в 8 раз прочнее и безопаснее обычного</p>
+                        </div>
+                        <div class="section-information__description-wrapper">
+                            <h3 class="section-information__description-title">Возможность выбора цвета</h3>
+                            <p class="section-information__description-text">4 цвета по RAL, заводская покраска с гарантией 7 лет</p>
+                        </div>
+                        <div class="section-information__description-wrapper">
+                            <h3 class="section-information__description-title">Бесшумность и плавность</h3>
+                            <p class="section-information__description-text">Бесшумные и плавные ролики. Нет прямого продувания. Узлы не ломаются даже при низких температурах</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-applications">
+            <div class="section-applications__container">
+                <picture>
+                    <source type="image/svg+xml" media="(min-width: 886px)" srcset="./img/logo-decor.svg">
+                    <img class="section-applications__decor" width="296" height="304"  src="./img/logo-decor.svg" alt="декор">
+                </picture>
+                <div class="section-applications__flex">
+                    <div class="section-applications__wrapper">
+                        <h2 class="section-applications__title">Произведём бесплатный замер и расчёт стоимости с выездом на объект</h2>
+                        <p class="section-applications__text">в офисе или на вашем объекте</p>
+                        <div class="section-applications__wrapper-request">
+                            <form class="section-applications__form" action="#">
+                                <input class="section-applications__input input" type="text" placeholder="Ваше имя">
+                                <input class="section-applications__input-tel-mobile input" type="tel" placeholder="+7(___)_______">
+                                <input class="section-applications__input-tablet input" type="tel" placeholder="Ваш номер телефона">
+                                <button class="section-applications__btn" type="submit">Оставить заявку на замер</button>
+                            </form>
+                            <div class="section-applications__checkbox checkbox">
+                                <form class="section-applications__checkbox-form checkbox__form" action="#">
+                                    <input class="section-applications__checkbox-input checkbox__input" type="checkbox" checked id="checkbox-records">
+                                    <label class="section-applications__checkbox-lable checkbox__lable" for="checkbox-records" >Я согласен на <span class="checkbox__border-bottom">обработку персональных данных</span></label>
+                                </form>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-applications__specialist-card">
+                        <picture>
+                            <source media="(min-width: 1440px)" srcset="./img/human-desktop.jpg">
+                            <source media="(min-width: 886px)" srcset="./img/human-tablet-interior.jpg">
+                            <img class="section-applications__human" width="332" height="442" src="./img/human-mobile.jpg" alt="специалист">
+                        </picture>
+                        <div class="section-applications__wrapper-card">
+                            <div class="section-applications__specialists">
+                                <h3 class="section-applications__name">Евгений Крайнов</h3>
+                                <p class="section-applications__about-specialist">специалист по монтажу<br>стаж 12 лет</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
