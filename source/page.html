@@ -109,21 +109,51 @@
                         <div class="section-applications__wrapper-request">
                             <form class="section-applications__form" action="#">
                                 <input class="section-applications__input input" type="text" placeholder="Ваше имя">
-                                <input class="section-applications__input-tel-mobile input" type="tel" placeholder="+7(___)_______">
-                                <input class="section-applications__input-tablet input" type="tel" placeholder="Ваш номер телефона">
+                                <!-- <input class="section-applications__input-tel-mobile input" type="tel" placeholder="+7(___)_______"> -->
+                                <input class="section-applications__input-tel-mobile--error input" type="tel" placeholder="+7 ( %&# ) ##@ - &*(0">
+                                <p class="section-applications__text-error">Некорректно заполнен номер</p>
+                                <!-- <input class="section-applications__input-tablet input" type="tel" placeholder="Ваш номер телефона"> -->
+                                <input class="section-applications__input-tablet--error input" type="tel" placeholder="+7 ( %&# ) ##@ - &*">
                                 <button class="section-applications__btn" type="submit">Оставить заявку на замер</button>
                             </form>
                             <div class="section-applications__checkbox checkbox">
                                 <form class="section-applications__checkbox-form checkbox__form" action="#">
                                     <input class="section-applications__checkbox-input checkbox__input" type="checkbox" checked id="checkbox-records">
-                                    <label class="section-applications__checkbox-lable checkbox__lable" for="checkbox-records" >Я согласен на <span class="checkbox__border-bottom">обработку персональных данных</span></label>
+                                    <label class="section-applications__checkbox-lable checkbox__lable" for="checkbox-records" >Я согласен на <span class="section-applications__border-bottom checkbox__border-bottom">обработку персональных данных</span></label>
+                                </form>   
+                            </div>
+                            <div class="section-applications__checkbox checkbox">
+                                <form class="section-applications__checkbox-form checkbox__form" action="#">
+                                    <input class="section-applications__checkbox-input checkbox__input" type="checkbox" id="checkbox-records-error">
+                                    <label class="section-applications__checkbox-lable-error checkbox__lable" for="checkbox-records-error" >Я согласен на <span class="section-applications__border-bottom-error checkbox__border-bottom">обработку персональных данных</span></label>
                                 </form>   
                             </div>
                         </div>
                     </div>
+                    <div class="section-applications__successfully-wrapper">
+                        <h2 class="section-applications__successfully-title">Завявка успешно отправлена!</h2>
+                        <p class="section-applications__successfully-text">Менеджер перезвонит вам в течении одного часа. Пожалуйста, оставайтесь на связи.
+                            А пока вы ожидаете звонка, предлагаем подписаться на социальные сети, там мы публикуем много полезного контента</p>
+                        <ul class="section-applications__list">
+                            <li class="section-applications__item">
+                                <a class="section-applications__link" href="#">
+                                    <svg width="30" height="18">
+                                        <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="section-applications__item">
+                                <a class="section-applications__link" href="#">
+                                    <svg width="28" height="16">
+                                        <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                                    </svg> 
+                                </a>
+                            </li>
+                        </ul>    
+                    </div>
                     <div class="section-applications__specialist-card">
                         <picture>
-                            <source media="(min-width: 1440px)" srcset="./img/human-desktop.jpg">
+                            <source media="(min-width: 1440px)" srcset="./img/human-desktop-interior.jpg">
                             <source media="(min-width: 886px)" srcset="./img/human-tablet-interior.jpg">
                             <img class="section-applications__human" width="332" height="442" src="./img/human-mobile.jpg" alt="специалист">
                         </picture>
