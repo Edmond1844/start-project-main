@@ -62,9 +62,6 @@
             <div class="section-information__container">
                 <div class="section-information__wrapper">
                     <h2 class="section-information__title">Безрамное остекление</h2>
-                    <a class="section-information__close-button" href="index.html" type="button">
-                        <img width="24" height="24" src="./img/icons/close.svg" alt="закрыть">
-                    </a>
                     <p class="section-information__text">Изготовление и монтаж за 3 недели!</p>
                     <p class="section-information__text">Нестандартное проектирование, панорамный вид и открытие створок за пару секунд. Система надежной защиты от непогодыдля террас, веранд, беседок и  ресторанов</p>
                     <p class="section-information__text">Система Claroflex Pivot — панорамная стеклянная поверхность без лишних деталей. Конструкции полностью адаптированы под непростые климатические условия России</p>
@@ -78,18 +75,18 @@
                     <div class="section-information__description-flex">
                         <div class="section-information__description-wrapper">
                             <h3 class="section-information__description-title">Алюминиевый профиль</h3>
-                            <p class="section-information__description-text">Не подвержен коррозии Производится в России Конструкция без лишних рам</p>
+                            <p class="section-information__description-text">Не подвержен коррозии <br>Производится в&nbsp;России <br>Конструкция без лишних рам</p>
                         </div>
                         <div class="section-information__description-wrapper">
                             <h3 class="section-information__description-title">Закаленное стекло</h3>
-                            <p class="section-information__description-text">Закаленное стекло толщиной 10 мм, в 8 раз прочнее и безопаснее обычного</p>
+                            <p class="section-information__description-text">Закаленное стекло толщиной 10&nbsp;мм, в&nbsp;8 раз прочнее и&nbsp;безопаснее обычного</p>
                         </div>
                         <div class="section-information__description-wrapper">
                             <h3 class="section-information__description-title">Возможность выбора цвета</h3>
-                            <p class="section-information__description-text">4 цвета по RAL, заводская покраска с гарантией 7 лет</p>
+                            <p class="section-information__description-text">4 цвета по RAL, заводская покраска с гарантией 7&nbsp;лет</p>
                         </div>
                         <div class="section-information__description-wrapper">
-                            <h3 class="section-information__description-title">Бесшумность и плавность</h3>
+                            <h3 class="section-information__description-title">Бесшумность и&nbsp;плавность</h3>
                             <p class="section-information__description-text">Бесшумные и плавные ролики. Нет прямого продувания. Узлы не ломаются даже при низких температурах</p>
                         </div>
                     </div>
@@ -108,31 +105,27 @@
                         <p class="section-applications__text">в офисе или на вашем объекте</p>
                         <div class="section-applications__wrapper-request">
                             <form class="section-applications__form" action="#">
-                                <input class="section-applications__input input" type="text" placeholder="Ваше имя">
-                                <!-- <input class="section-applications__input-tel-mobile input" type="tel" placeholder="+7(___)_______"> -->
-                                <input class="section-applications__input-tel-mobile--error input" type="tel" placeholder="+7 ( %&# ) ##@ - &*(0">
-                                <p class="section-applications__text-error">Некорректно заполнен номер</p>
-                                <!-- <input class="section-applications__input-tablet input" type="tel" placeholder="Ваш номер телефона"> -->
-                                <input class="section-applications__input-tablet--error input" type="tel" placeholder="+7 ( %&# ) ##@ - &*">
+                                <!-- При ошибке валидации добавить к input класс error--input -->
+                                <!-- Для вывода текста ошибки после input добавить тег p с классом error--text -->
+                                <input class="section-applications__input input " type="text" placeholder="Ваше имя">
+                                <input class="section-applications__input-tel-mobile input" type="tel" placeholder="+7(___)_______">
+                                <!-- Пример текста с ошибкой -->
+                                <!-- <p class="section-applications__text--error">Некорректно заполнен номер</p> -->
+                                <input class="section-applications__input-tablet input" type="tel" placeholder="Ваш номер телефона">
                                 <button class="section-applications__btn" type="submit">Оставить заявку на замер</button>
                             </form>
                             <div class="section-applications__checkbox checkbox">
                                 <form class="section-applications__checkbox-form checkbox__form" action="#">
                                     <input class="section-applications__checkbox-input checkbox__input" type="checkbox" checked id="checkbox-records">
+                                    <!-- При ошибке валидации добавить к input класс checkbox-lable--error и к тегу span checkbox__border-bottom--error-->
                                     <label class="section-applications__checkbox-lable checkbox__lable" for="checkbox-records" >Я согласен на <span class="section-applications__border-bottom checkbox__border-bottom">обработку персональных данных</span></label>
-                                </form>   
-                            </div>
-                            <div class="section-applications__checkbox checkbox">
-                                <form class="section-applications__checkbox-form checkbox__form" action="#">
-                                    <input class="section-applications__checkbox-input checkbox__input" type="checkbox" id="checkbox-records-error">
-                                    <label class="section-applications__checkbox-lable-error checkbox__lable" for="checkbox-records-error" >Я согласен на <span class="section-applications__border-bottom-error checkbox__border-bottom">обработку персональных данных</span></label>
                                 </form>   
                             </div>
                         </div>
                     </div>
                     <div class="section-applications__successfully-wrapper">
                         <h2 class="section-applications__successfully-title">Завявка успешно отправлена!</h2>
-                        <p class="section-applications__successfully-text">Менеджер перезвонит вам в течении одного часа. Пожалуйста, оставайтесь на связи.
+                        <p class="section-applications__successfully-text">Менеджер перезвонит вам в&nbsp;течении одного часа. Пожалуйста, оставайтесь на связи.
                             А пока вы ожидаете звонка, предлагаем подписаться на социальные сети, там мы публикуем много полезного контента</p>
                         <ul class="section-applications__list">
                             <li class="section-applications__item">
@@ -160,7 +153,7 @@
                         <div class="section-applications__wrapper-card">
                             <div class="section-applications__specialists">
                                 <h3 class="section-applications__name">Евгений Крайнов</h3>
-                                <p class="section-applications__about-specialist">специалист по монтажу<br>стаж 12 лет</p>
+                                <p class="section-applications__about-specialist">специалист по монтажу<br>стаж 12&nbsp;лет</p>
                             </div>
                         </div>
                     </div>

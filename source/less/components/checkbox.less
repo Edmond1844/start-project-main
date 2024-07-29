@@ -64,8 +64,27 @@
     }
 }
 
+
+.checkbox-lable--error {
+    color: @red;
+
+    &::before {
+        content: '';
+        border-color: @red;
+    }
+    
+    &::after {
+        content: '';
+        border-color: @red;   
+    }
+}
+
 .checkbox__border-bottom {
     border-bottom: 1px solid @gray-darker;
+}
+
+.border-bottom--error {
+    border-bottom: 1px solid @red;
 }
 
 @media (min-width: @tablet-width) {

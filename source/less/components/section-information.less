@@ -25,18 +25,6 @@
     margin-bottom: 33px;
 }
 
-.section-information__close-button {
-    border: none; 
-
-    outline: none;
-
-    background-color: @transparent;
-
-    position: absolute;
-    top: 6px;
-    right: -5px;
-}
-
 .section-information__text {
     margin: 0;
     margin-bottom: 23px;
@@ -66,6 +54,10 @@
     margin-bottom: 15px;
 
     color: @even-lighter-gray;
+
+    &::marker {
+        font-size: 10px;
+    }
 }
 
 .section-information__description-flex {
@@ -78,7 +70,7 @@
 }
 
 .section-information__description-wrapper {
-    width: 290px;
+    width: 283px;
 }
 
 .section-information__description-title {
@@ -122,12 +114,6 @@
         color: @black;
     }
 
-    .section-information__close-button {
-        top: 14px;
-        right: -5px;
-    }
-    
-
     .section-information__item-text {
         margin-bottom: 6px;
     }
@@ -157,6 +143,6 @@
     }
 
     .section-information__description-wrapper {
-        width: 400px;
+        width: 325px;
     }
 }
