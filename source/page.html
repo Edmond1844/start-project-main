@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <div class="header__flex--index">
+            <div class="header__flex">
                 <div class="header__flex-wrapper">
                     <a href="index.html"> 
                         <picture>
@@ -105,20 +105,24 @@
                         <p class="section-applications__text">в офисе или на вашем объекте</p>
                         <div class="section-applications__wrapper-request">
                             <form class="section-applications__form" action="#">
-                                <!-- При ошибке валидации добавить к input класс error--input -->
-                                <!-- Для вывода текста ошибки после input добавить тег p с классом error--text -->
-                                <input class="section-applications__input input " type="text" placeholder="Ваше имя">
-                                <input class="section-applications__input-tel-mobile input" type="tel" placeholder="+7(___)_______">
-                                <!-- Пример текста с ошибкой -->
-                                <!-- <p class="section-applications__text--error">Некорректно заполнен номер</p> -->
-                                <input class="section-applications__input-tablet input" type="tel" placeholder="Ваш номер телефона">
+                                <!-- При ошибке валидации добавить к input класс input--error -->
+                                <!-- Для вывода текста ошибки после input добавить тег p с классом section-applications__text-error -->
+                                <div class="section-applications__form-wrapper">
+                                    <input class="section-applications__input input" type="text" placeholder="Ваше имя">
+                                    <!-- <p class="section-applications__text-error ">Некорректно заполнено имя</p> -->
+                                </div>
+                                <div class="section-applications__form-wrapper">
+                                    <input class="section-applications__input-tel-mobile input" type="tel" placeholder="+7(___)_______">
+                                    <input class="section-applications__input-tablet input" type="tel" placeholder="Ваш номер телефона">
+                                    <!-- <p class="section-applications__text-error">Некорректно заполнен номер</p> -->
+                                </div>
                                 <button class="section-applications__btn" type="submit">Оставить заявку на замер</button>
                             </form>
                             <div class="section-applications__checkbox checkbox">
                                 <form class="section-applications__checkbox-form checkbox__form" action="#">
                                     <input class="section-applications__checkbox-input checkbox__input" type="checkbox" checked id="checkbox-records">
-                                    <!-- При ошибке валидации добавить к input класс checkbox-lable--error и к тегу span checkbox__border-bottom--error-->
-                                    <label class="section-applications__checkbox-lable checkbox__lable" for="checkbox-records" >Я согласен на <span class="section-applications__border-bottom checkbox__border-bottom">обработку персональных данных</span></label>
+                                    <!-- При ошибке валидации добавить к input класс checkbox-lable--error -->
+                                    <label class="section-applications__checkbox-lable checkbox__lable checkbox-lable--error" for="checkbox-records" >Я согласен на <span>обработку персональных данных</span></label>
                                 </form>   
                             </div>
                         </div>

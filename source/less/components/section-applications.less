@@ -42,15 +42,32 @@
     color: @even-lighter-gray;
 }
 
+.section-applications__text-error {
+    margin: 0;
+    margin-top: 6px;
+
+    font-family: @main-font;
+    font-weight: 400;
+    font-size: 11px;
+    
+    line-height: 150%;
+
+    color: @red;
+}
+
+
+
 .section-applications__form {
     position: relative;
 
     margin-top: 25px;
+
+    .section-applications__form-wrapper:nth-child(n+2) {
+        margin-top: 16px;
+    }
 }
 
 .section-applications__input {
-    margin-bottom: 16px;
-
     height: 51px;
     width: 332px;
 }
@@ -195,14 +212,12 @@
         width: 379px;
     }
     
-    .section-applications__text {
-        display: none;
+    .section-applications__text-error {
+        font-size: 15px;
     }
 
     .section-applications__input {
         width: 377px;
-
-        margin-bottom: 20px;
     }
 
     .section-applications__input-tel-mobile {
@@ -231,6 +246,10 @@
 
     .section-applications__checkbox-lable {
         margin-top: 18px;
+
+        span {
+            border-bottom: 1px solid @gray-darker;
+        }
     }
 
     .section-applications__border-bottom {

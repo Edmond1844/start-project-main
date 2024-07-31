@@ -1,3 +1,13 @@
+// стили для header page
+
+.header {
+    background-color: @white;
+
+    svg {
+        color: @black;
+    }
+}
+
 // стили для header--index
 
 .header--index {
@@ -6,6 +16,8 @@
     position: absolute;
     top: 31px;
     left: 0;
+
+    background-color: @transparent;
 }
 
 .header__container--index {
@@ -13,10 +25,14 @@
     .flex-between ();
 }
 
-.header--index__nav-item {
+.header__icon--index-nav-item {
     svg {
         color: @white;
     }
+}
+
+.header__tel {
+    color: @white;
 }
 
 .header__tel--index {
@@ -28,16 +44,6 @@
 
     &:hover {
         color: @green;
-    }
-}
-
-// стили для header page
-
-.header {
-    background-color: @white;
-
-    svg {
-        color: @black;
     }
 }
 
@@ -137,7 +143,7 @@
 
         margin-right: 55px;
 
-        color: @black;
+        color: @white;
     }
 }
 
