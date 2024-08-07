@@ -143,7 +143,7 @@
                                 <a class="section-applications__link" href="#">
                                     <svg width="28" height="16">
                                         <use xlink:href="./img/sprite.svg#icon-vk"></use>
-                                    </svg> 
+                                    </svg>                                     
                                 </a>
                             </li>
                         </ul>    
@@ -156,10 +156,10 @@
                             <source media="(min-width: 886px)" srcset="./img/human-tablet-interior.jpg">
                             <img class="section-applications__human" width="332" height="442" src="./img/human-mobile.jpg" alt="специалист">
                         </picture>
-                        <div class="section-applications__wrapper-card">
-                            <div class="section-applications__specialists">
-                                <h3 class="section-applications__name">Евгений Крайнов</h3>
-                                <p class="section-applications__about-specialist">специалист по монтажу<br>стаж 12&nbsp;лет</p>
+                        <div class="section-applications__wrapper-card specialists-wrapper-card">
+                            <div class="section-applications__specialists specialists-card">
+                                <h3 class="section-applications__name specialists-name">Евгений Крайнов</h3>
+                                <p class="section-applications__about-specialist specialist-about">специалист по монтажу<br>стаж 12&nbsp;лет</p>
                             </div>
                         </div>
                     </div>
@@ -167,5 +167,53 @@
             </div>
         </section>
     </main>
+    <div class="popup">
+        <div class="popup__container">
+            <button class="popup__icon" type="button">
+                <svg width="26" height="26">
+                    <use xlink:href="./img/sprite.svg#icon-close"></use>
+                </svg> 
+            </button>
+            <div class="popup__wrapper">
+                <h2 class="popup__title">Задайте вопрос менеджеру</h2>
+                <form class="popup__form" action="#">
+                    <!-- При ошибке валидации добавить к input класс input--error -->
+                    <!-- Для вывода текста ошибки после input добавить тег p с классом popup__text-error -->
+                    <div class="popup__form-wrapper">
+                        <input class="popup__input input " type="text" placeholder="Ваше имя">
+                        <!-- <p class="popup__text-error ">Некорректно заполнено имя</p> -->
+                    </div>
+                    <div class="popup__form-wrapper">
+                        <input class="popup__input input" type="tel" placeholder="Ваш номер телефона">
+                        <!-- <p class="popup__text-error">Некорректно заполнен номер</p> -->
+                    </div>
+                    <div class="popup__form-wrapper">
+                        <input class="popup__input-message input" type="text" placeholder="Ваше сообщение">
+                    </div>
+                </form>
+                <button class="popup__send-btn" type="submit">Отправить сообщение</button>
+                <div class="popup__checkbox checkbox">
+                    <form class="popup__checkbox-form checkbox__form" action="#">
+                        <input class="popup__checkbox-input checkbox__input" type="checkbox" checked id="checkbox-popup">
+                        <!-- При ошибке валидации добавить к input класс checkbox-lable--error -->
+                        <label class="popup__checkbox-lable checkbox__lable" for="checkbox-popup" >Я согласен на <span>обработку персональных данных</span></label>
+                    </form>   
+                </div>
+                <picture>
+                    <source type=”image/webp” media="(min-width: 1440px)" srcset="./img/human-desktop-interior.webp">
+                    <source type=”image/webp” media="(min-width: 886px)" srcset="./img/human-tablet-interior.webp">
+                    <source media="(min-width: 1440px)" srcset="./img/human-desktop-interior.jpg">
+                    <source media="(min-width: 886px)" srcset="./img/human-tablet-interior.jpg">
+                    <img class="popup__human" width="332" height="442" src="./img/human-mobile.jpg" alt="специалист">
+                </picture>
+                <div class="popup__wrapper-card specialists-wrapper-card">
+                    <div class="popup__specialists specialists-card">
+                        <h3 class="popup__name specialists-name">Евгений Крайнов</h3>
+                        <p class="popup__about-specialist specialist-about">специалист по монтажу<br>стаж 12&nbsp;лет</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

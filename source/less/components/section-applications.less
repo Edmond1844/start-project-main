@@ -43,16 +43,10 @@
 }
 
 .section-applications__text-error {
+    .text-error ();
+
     margin: 0;
     margin-top: 6px;
-
-    font-family: @main-font;
-    font-weight: 400;
-    font-size: 11px;
-    
-    line-height: 150%;
-
-    color: @red;
 }
 
 
@@ -93,9 +87,14 @@
 
     line-height: 120%;
 
+    background-color: @green;
     color: @white-darker;
 
     margin-top: 45px;
+
+    &:hover {
+        background-color: @green-darker;
+    }
 }
 
 .section-applications__successfully-title {
@@ -146,47 +145,6 @@
     position: relative;
 
     margin-top: 60px;
-}
-
-.section-applications__wrapper-card {
-    position: absolute;
-    bottom: 115px;
-    left: -17px;
-}
-
-.section-applications__specialists {
-    width: 219px;
-    height: 81px;
-
-    background-color: @light-transparent-black;
-    
-    padding: 14px 5px 6px 18px;
-}
-
-.section-applications__name {
-    font-family: @main-font;
-    font-weight: 500;
-    font-size: 16px;
-
-    line-height: 123%;
-
-    margin-top: 0;
-    margin-bottom: 5px;
-
-    color: @white;
-    
-}
-
-.section-applications__about-specialist {
-    font-family: @main-font;
-    font-weight: 400;
-    font-size: 12px;
-
-    line-height: 140%;
-
-    margin: 0;
-
-    color: @white;
 }
 
 @media (min-width: @tablet-width) {

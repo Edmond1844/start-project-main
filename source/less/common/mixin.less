@@ -39,7 +39,6 @@
 }
 
 .btn-link () {
-    background-color: @green;
     border-radius: 5px;
 
     text-transform: uppercase;
@@ -63,8 +62,6 @@
 .btn () {
     box-sizing: border-box;
 
-    background-color: @green;
-
     display: inline-block;
 
     text-align: center;
@@ -83,6 +80,16 @@
     &::placeholder {
         font-family: @main-font;
     }
+}
+
+.text-error () {
+    font-family: @main-font;
+    font-weight: 400;
+    font-size: 11px;
+    
+    line-height: 150%;
+
+    color: @red;
 }
 
 .style-input-text () {

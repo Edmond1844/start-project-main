@@ -1,0 +1,88 @@
+.popup {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 28px 14px 0 14px;
+
+    background-color: @white;
+
+    overflow: auto;
+}
+
+.popup__container {
+    .container ();
+    position: relative;
+}
+
+.popup__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 0;
+    
+    background-color: @transparent;
+
+    .btn ();
+}
+
+.popup__title {
+    font-family: @main-font;
+    font-weight: 500;
+    font-size: 25px;
+
+    color: @black;
+
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.popup__input {
+    margin-top: 16px;
+
+    width: 330px;
+}
+
+.popup__checkbox-lable {
+    z-index: 1001;
+}
+
+.popup__input-message {
+    margin-top: 16px;
+
+    width: 330px;
+    height: 133px;
+}
+
+.popup__text-error {
+    .text-error ();
+}
+
+.popup__send-btn {
+    .btn ();
+
+    margin-top: 39px;
+
+    background-color: @green;
+    color: @white;
+
+    width: 330px;
+    height: 56px;
+
+    font-family: @main-font;
+    font-weight: 500;
+    font-size: 15px;
+
+    &:hover {
+        background-color: @green-darker;
+    }
+}
+
+.popup__checkbox-lable {
+    margin-bottom: 37px;
+}

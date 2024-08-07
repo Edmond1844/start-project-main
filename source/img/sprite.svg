@@ -35,5 +35,7 @@
             </filter>
         </defs>
     </symbol>
-
+    <symbol viewBox="0 0 26 26" id="icon-close" fill="currentColor">
+        <path d="M1 1L25 25M1 25L25 1" stroke="#1F1B20" stroke-width="2"/>
+    </symbol>
 </svg>
