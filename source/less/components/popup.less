@@ -1,4 +1,6 @@
 .popup {
+    // display: none;
+
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -19,9 +21,9 @@
     position: relative;
 }
 
-.popup__icon {
+.popup__icon-btn {
     position: absolute;
-    top: 0;
+    top: 12px;
     right: 0;
 
     padding: 0;
@@ -85,4 +87,87 @@
 
 .popup__checkbox-lable {
     margin-bottom: 37px;
+}
+
+.popup__specialist-card-wrapper {
+    position: relative;
+}
+
+@media (min-width: @tablet-width) {
+    .popup {
+        padding-top: 81px;
+    }
+
+    .popup__wrapper {
+        display: flex;
+        column-gap: 76px
+    }
+
+    .popup__icon-btn{
+        top: -55px;
+        right: 10px;
+    }
+
+    .popup__title {
+        width: 338px;
+
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .popup__checkbox {
+        padding-top: 0;
+        padding-left: 22px;
+        margin-top: 16px;
+    }
+
+    .popup__checkbox-lable {
+        span {
+            border-bottom: 1px solid @gray-darker;
+        }
+    }
+
+    .popup__input {
+        width: 380px;
+    }
+
+    .popup__input-message {
+        width: 380px;
+    }
+
+    .popup__send-btn {
+        width: 380px;
+    }
+
+    .popup__human {
+        width: 434px;
+        height: 501px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .popup__icon {
+        color: @gray-darker;
+    }
+    .popup__wrapper {
+        justify-content: space-around;
+        column-gap: 29px
+    }
+
+    .popup__title {
+        width: 281px;
+
+        font-size: 30px;
+
+        line-height: 38px;
+    }
+
+    .popup__checkbox-form {
+        margin: 0;
+    }
+
+    .popup__human {
+        width: 327px;
+        height: 501px;
+    }
 }
