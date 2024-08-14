@@ -3,10 +3,11 @@
 
     position: fixed;
     z-index: 1000;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
-    width: 100%;
+    width: 360px;
     height: 100%;
 
     padding: 28px 14px 0 14px;
@@ -95,6 +96,8 @@
 
 @media (min-width: @tablet-width) {
     .popup {
+        width: 960px;
+
         padding-top: 81px;
     }
 
@@ -103,9 +106,9 @@
         column-gap: 76px
     }
 
-    .popup__icon-btn{
+    .popup__icon-btn {
         top: -55px;
-        right: 10px;
+        right: -3px;
     }
 
     .popup__title {
@@ -146,12 +149,25 @@
 }
 
 @media (min-width: @desktop-width) {
+    .popup {
+        width: 960px;
+    }
+
+    .popup__container {
+        width: 886px;
+    }
+    
     .popup__icon {
         color: @gray-darker;
     }
+
+    .popup__icon-btn {
+        top: -3px;
+        right: -28px;
+    }
+
     .popup__wrapper {
-        justify-content: space-around;
-        column-gap: 29px
+        column-gap: 129px
     }
 
     .popup__title {
