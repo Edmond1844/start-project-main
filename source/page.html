@@ -121,8 +121,8 @@
                             <div class="section-applications__checkbox checkbox">
                                 <form class="section-applications__checkbox-form checkbox__form" action="#">
                                     <input class="section-applications__checkbox-input checkbox__input" type="checkbox" checked id="checkbox-records">
-                                    <!-- При ошибке валидации добавить к input класс checkbox-lable--error -->
-                                    <label class="section-applications__checkbox-lable checkbox__lable checkbox-lable--error" for="checkbox-records" >Я согласен на <span>обработку персональных данных</span></label>
+                                    <!-- При ошибке валидации добавить к input класс checkbox__lable--error -->
+                                    <label class="section-applications__checkbox-lable checkbox__lable checkbox__lable--error" for="checkbox-records" >Я согласен на <span>обработку персональных данных</span></label>
                                 </form>   
                             </div>
                         </div>
@@ -175,31 +175,29 @@
                 </svg> 
             </button>
             <div class="popup__wrapper">
-                <div>
+                <div class="a">
                     <h2 class="popup__title">Задайте вопрос менеджеру</h2>
                     <form class="popup__form" action="#">
                         <!-- При ошибке валидации добавить к input класс input--error -->
                         <!-- Для вывода текста ошибки после input добавить тег p с классом popup__text-error -->
                         <div class="popup__form-wrapper">
-                            <input class="popup__input input " type="text" placeholder="Ваше имя">
+                            <input class="popup__input input " maxlength="1478" type="text" placeholder="Ваше имя">
                             <!-- <p class="popup__text-error ">Некорректно заполнено имя</p> -->
                         </div>
                         <div class="popup__form-wrapper">
-                            <input class="popup__input input" type="tel" placeholder="Ваш номер телефона">
+                            <input class="popup__input input" maxlength="11" type="tel" placeholder="Ваш номер телефона">
                             <!-- <p class="popup__text-error">Некорректно заполнен номер</p> -->
                         </div>
                         <div class="popup__form-wrapper">
-                            <input class="popup__input-message input" type="text" placeholder="Ваше сообщение">
+                            <textarea class="popup__input-message input" maxlength="999" placeholder="Ваше сообщение"></textarea>
+                        </div>
+                        <button class="popup__send-btn" type="submit">Отправить сообщение</button>
+                        <div class="popup__checkbox checkbox__form">
+                            <input class="popup__checkbox-input checkbox__input" type="checkbox" checked id="checkbox-popup">
+                            <!-- При ошибке валидации добавить к input класс checkbox__lable--error -->
+                            <label class="popup__checkbox-lable checkbox__lable" for="checkbox-popup" >Я согласен на <span>обработку персональных данных</span></label>
                         </div>
                     </form>
-                    <button class="popup__send-btn" type="submit">Отправить сообщение</button>
-                    <div class="popup__checkbox checkbox">
-                        <form class="popup__checkbox-form checkbox__form" action="#">
-                            <input class="popup__checkbox-input checkbox__input" type="checkbox" checked id="checkbox-popup">
-                            <!-- При ошибке валидации добавить к input класс checkbox-lable--error -->
-                            <label class="popup__checkbox-lable checkbox__lable" for="checkbox-popup" >Я согласен на <span>обработку персональных данных</span></label>
-                        </form>   
-                    </div>
                 </div>
                 <div class="popup__specialist-card-wrapper">
                     <picture>
