@@ -213,8 +213,8 @@
                             <p class="section-records__subtitle">в офисе или на вашем объекте</p>
                         </div>
                         <form class="section-records__form" action="#">
-                            <input class="section-records__input" type="text" placeholder="Ваше имя">
-                            <input class="section-records__input" maxlength="11" type="tel" placeholder="+7(___)_______">
+                            <input class="section-records__input input" type="text" placeholder="Ваше имя">
+                            <input class="section-records__input input" maxlength="11" type="tel" placeholder="+7(___)_______">
                             <button class="section-records__btn" type="submit">Оставить заявку на замер</button>
                             <div class="section-records__checkbox checkbox">
                                 <div class="section-records__checkbox-form checkbox__form">
@@ -228,9 +228,9 @@
                         <picture>
                             <source type=”image/webp” media="(min-width: 1440px)" srcset="./img/human-desktop.webp">
                             <source type=”image/webp” srcset="./img/human-mobile.webp">
-                            <source media="(min-width: 1440px)" srcset="./img/human-desktop.jpg">
-                            <source media="(min-width: 886px)" srcset="./img/human-tablet.jpg">
-                            <img class="section-records__human" width="332" height="442" src="./img/human-mobile.jpg" alt="специалист">
+                            <source media="(min-width: 1440px)" srcset="./img/human-desktop.jpg 1x, ./img/human-desktop@2x.jpg 2x">
+                            <source media="(min-width: 886px)" srcset="./img/human-tablet.jpg 1x, ./img/human-tablet@2x.jpg 2x">
+                            <img class="section-records__human" width="332" height="442" src="./img/human-mobile.jpg" srcset="./img/human-mobile@2x.jpg 2x" alt="специалист">
                         </picture>
                         <div class="section-records__wrapper-card">
                             <div class="section-records__specialists">
