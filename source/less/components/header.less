@@ -23,6 +23,8 @@
 .header__container--index {
     .container ();
     .flex-between ();
+
+    column-gap: 10px;
 }
 
 .header__icon--index-nav-item {
@@ -93,9 +95,10 @@
 
 .header__nav-list {
     .flex-between ();
-
+    justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 5px;
 }
 
 @media (min-width: @tablet-width) {
