@@ -77,7 +77,13 @@
         </section>
         <section class="section-vidio-phone">
             <div class="section-vidio-phone__container-video">
-                <button class="section-vidio-phone__button"><span class="visually-hidden">кнопка видео</span></button>
+                <button class="section-vidio-phone__button">
+                    <img class="section-vidio-phone__img" width="184" height="184"  src="./img/video-img.jpg" alt="Картинка видео">
+                    <svg class="section-vidio-phone__play"  width="50" height="58">
+                        <use xlink:href="./img/sprite.svg#play-video"></use>
+                    </svg>
+                    <span class="visually-hidden">кнопка видео</span>
+                </button>
             </div>
             <div class="section-vidio-phone__container-phone">
                 <a class="section-vidio-phone__phone" href="tel:83952606808">
@@ -98,7 +104,7 @@
                     <div class="section-portfolio__flex">
                         <div class="section-portfolio__wrapper">
                             <picture>
-                                <source type=”image/webp” media="(min-width: 1440px)" srcset="./img/panoramic-desktop.webp">
+                                <source type="image/webp" media="(min-width: 1440px)" srcset="./img/panoramic-desktop.webp">
                                 <source media="(min-width: 1440px)" srcset="./img/panoramic-desktop.jpg">
                                 <source media="(min-width: 886px)" srcset="./img/panoramic-tablet.jpg">
                                 <img class="section-portfolio__img" width="332" height="149" src="./img/panoramic-mobile.jpg" alt="Понорамное остекление">
@@ -226,8 +232,8 @@
                     </div>
                     <div class="section-records__specialist-card">
                         <picture>
-                            <source type=”image/webp” media="(min-width: 1440px)" srcset="./img/human-desktop.webp">
-                            <source type=”image/webp” srcset="./img/human-mobile.webp">
+                            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/human-desktop.webp">
+                            <source type="image/webp" srcset="./img/human-mobile.webp">
                             <source media="(min-width: 1440px)" srcset="./img/human-desktop.jpg 1x, ./img/human-desktop@2x.jpg 2x">
                             <source media="(min-width: 886px)" srcset="./img/human-tablet.jpg 1x, ./img/human-tablet@2x.jpg 2x">
                             <img class="section-records__human" width="332" height="442" src="./img/human-mobile.jpg" srcset="./img/human-mobile@2x.jpg 2x" alt="специалист">
@@ -353,5 +359,24 @@
             </div>
         </div>
     </footer>
+    <div class="popup__video">
+        <div class="popup__container popup__container--index">
+            <button class="popup__icon-btn" type="button">
+                <svg class="popup__icon" width="26" height="26">
+                    <use xlink:href="./img/sprite.svg#icon-close"></use>
+                </svg> 
+            </button>
+            <picture>
+                <source media="(min-width: 1440px)" srcset="./img/video-popup-desktop.jpg">
+                <source media="(min-width: 886px)" srcset="./img/video-popup-tablet.jpg">
+                <img class="popup__video-img" width="360" height="502" src="./img/video-popup-mobile.jpg" alt="видео">
+            </picture>
+            <button class="popup__play-button" type="button">
+                <svg width="50" height="58">
+                    <use xlink:href="./img/sprite.svg#play-video"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 </body>
 </html>

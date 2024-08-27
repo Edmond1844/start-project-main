@@ -7,10 +7,9 @@
 }
 
 .section-vidio-phone__button {
-    background-color: @gray;
+    position: relative;
 
-    width: 184px;
-    height: 184px;
+    background-color: @transparent;
 
     z-index: 100;
 
@@ -21,6 +20,17 @@
     cursor: pointer;
 
     border: none;
+}
+
+.section-vidio-phone__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: @white;
+    
+    z-index: 1000;
 }
 
 .section-vidio-phone__container-phone {
@@ -49,10 +59,12 @@
 
 @media (min-width: @tablet-width) {
     .section-vidio-phone__button {
+        margin-top: -11px;
+    }
+
+    .section-vidio-phone__img {
         width: 214px;
         height: 214px;
-
-        margin-top: -11px;
     }
 
     .section-vidio-phone__container-phone {
@@ -67,6 +79,11 @@
 
         margin-bottom: 32px;
         margin-left: 20px;
+    }
+    
+    .section-vidio-phone__img {
+        width: 237px;
+        height: 237px;
     }
 
 }
