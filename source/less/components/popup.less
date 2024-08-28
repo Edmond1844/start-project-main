@@ -1,23 +1,12 @@
-.popup {
-    // display: none;
+.popup-ask {
+    display: none;
 
-    position: fixed;
-    z-index: 999;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 100%;
-    height: 100%;
-
-    padding: 28px 14px 0 14px;
+    .popup ();
 
     background-color: @transparent-black;
-
-    overflow: auto;
 }
 
-.popup__container {
+.popup-ask__container {
     width: 360px;
 
     margin: 0 auto;
@@ -25,10 +14,9 @@
     padding: 28px 14px 0;
     background-color: @white;
     position: relative;
-    
 }
 
-.popup__icon-btn {
+.popup-ask__icon-btn {
     position: absolute;
     top: 35px;
     right: 15px;
@@ -40,7 +28,7 @@
     .btn ();
 }
 
-.popup__title {
+.popup-ask__title {
     font-family: @main-font;
     font-weight: 500;
     font-size: 25px;
@@ -51,13 +39,16 @@
     margin-bottom: 24px;
 }
 
-.popup__input {
+.popup-ask__input {
+    .style-input-text ();
+
     margin-top: 16px;
 
     width: 332px;
+    height: 51px;
 }
 
-.popup__input-message {
+.popup-ask__input-message {
     .textarea ();
 
     padding-left: 20px;
@@ -66,13 +57,17 @@
 
     width: 332px;
     height: 133px;
+
+    border: 1px solid @transparent-black;
+
+    border-radius: 5px;
 }
 
-.popup__text-error {
+.popup-ask__text-error {
     .text-error ();
 }
 
-.popup__send-btn {
+.popup-ask__send-btn {
     .btn ();
 
     margin-top: 39px;
@@ -92,104 +87,106 @@
     }
 }
 
-.popup__checkbox {
+.popup-ask__checkbox {
     margin-left: 19px;
 }
 
-.popup__checkbox-lable {
+.popup-ask__checkbox-lable {
     margin-bottom: 37px;
     margin-top: 19px;
 
     z-index: 1001;
 }
 
-.popup__specialist-card-wrapper {
+.popup-ask__specialist-card-wrapper {
     position: relative;
 }
 
-.popup__human {
+.popup-ask__human {
     position: relative;
     bottom: -7px;
 
 }
 
 @media (min-width: @tablet-width) {
-    .popup__container {
+    .popup-ask__container {
         width: 960px;
         height: 713px;
 
         padding: 86px 35px 108px;
     }
     
-    .popup__wrapper {
+    .popup-ask__wrapper {
         display: flex;
         column-gap: 76px
     }
 
-    .popup__icon-btn {
+    .popup-ask__icon-btn {
         top: 35px;
         right: 30px;
     }
 
-    .popup__title {
+    .popup-ask__title {
         width: 338px;
 
         font-size: 36px;
         line-height: 50px;
     }
 
-    .popup__checkbox {
+    .popup-ask__checkbox {
         padding-top: 0;
         padding-left: 22px;
         margin-top: 16px;
     }
 
-    .popup__checkbox-lable {
+    .popup-ask__checkbox-lable {
         span {
             border-bottom: 1px solid @gray-darker;
         }
     }
 
-    .popup__input {
+    .popup-ask__input {
+        width: 380px;
+
+        .style-input-text ();
+    }
+
+    .popup-ask__input-message {
         width: 380px;
     }
 
-    .popup__input-message {
+    .popup-ask__send-btn {
         width: 380px;
     }
 
-    .popup__send-btn {
-        width: 380px;
-    }
-
-    .popup__human {
+    .popup-ask__human {
         width: 434px;
         height: 501px;
     }
 }
 
 @media (min-width: @desktop-width) {
-    .popup__container {
+    .popup-ask__container {
         width: 834px;
         height: 615px;
 
         padding: 52px 80px 62px;
     }
     
-    .popup__icon {
+    .popup-ask__icon {
         color: @gray-darker;
     }
 
-    .popup__icon-btn {
+    .popup-ask__icon-btn {
         top: 0;
         right: -45px;
     }
 
-    .popup__wrapper {
+    .popup-ask__wrapper {
         column-gap: 29px
     }
 
-    .popup__title {
+    .popup-ask__title {
         width: 281px;
 
         font-size: 30px;
@@ -197,62 +194,67 @@
         line-height: 38px;
     }
 
-    .popup__checkbox {
+    .popup-ask__checkbox {
         margin-left: 20px;
         padding-left: 5px;
     }
 
-    .popup__input {
+    .popup-ask__input {
         width: 328px;
     }
 
-    .popup__input-message {
+    .popup-ask__input-message {
         width: 328px;
     }
 
-    .popup__send-btn {
+    .popup-ask__send-btn {
         width: 328px;
     }
 
-    .popup__human {
+    .popup-ask__human {
         width: 327px;
         height: 501px;
     }
 
-    .popup__checkbox-lable {
+    .popup-ask__checkbox-lable {
         font-size: 11px;
     }
 }
 
 // Видео 
-.popup__video {
-    // display: none;
+.popup-video {
+    display: none;
 
-    position: fixed;
-    z-index: 999;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 100%;
-    height: 100%;
-
-    padding: 28px 14px 0 14px;
+    .popup ();
 
     background-color: @transparent-black;
-
-    overflow: auto;
 }
 
-.popup__container--index {
-    position: relative;
+.popup-video__container {
+    width: 360px;
 
-    background-color: @transparent;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.popup-video__video-img {
+    width: 100%;
+}
+
+.popup-video__icon-btn {
+    position: absolute;
+    top: 35px;
+    right: 15px;
 
     padding: 0;
+    
+    background-color: @transparent;
+
+    .btn ();
 }
 
-.popup__play-button {
+.popup-video__play-button {
     .btn ();
 
     position: absolute;
@@ -265,40 +267,42 @@
 }
 
 @media (min-width: @tablet-width) {
-    .popup__video-img {
+    .popup-video__container {
         width: 970px;
+    }
+
+    .popup-video__icon-btn {
+        right: 50px;
+    }
+
+    .popup-video__video-img {
         height: 543px;
     }
 
-    .popup__icon {
+    .popup-video__icon {
         color: @white;
     }
 
-    .popup__play-button {
+    .popup-video__play-button {
         top: 40%;
     }
 }
 
 @media (min-width: @desktop-width) {
-    .popup__container--index {
+    .popup-video__container {
         width: 1280px;
     }
 
-    .popup__video-img {
-        width: 1274px;
+    .popup-video__video-img {
         height: 653px;
     }
 
-    .popup__icon-btn {
+    .popup-video__icon-btn {
         top: 45px;
         right: 50px;
     }
 
-    .popup__icon {
-        color: @white;
-    }
-
-    .popup__play-button {
+    .popup-video__play-button {
         top: 50%;
     }
 }

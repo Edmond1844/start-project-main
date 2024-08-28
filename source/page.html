@@ -167,50 +167,50 @@
             </div>
         </section>
     </main>
-    <div class="popup">
-        <div class="popup__container">
-            <button class="popup__icon-btn" type="button">
-                <svg class="popup__icon" width="26" height="26">
+    <div class="popup-ask">
+        <div class="popup-ask__container">
+            <button class="popup-ask__icon-btn" type="button">
+                <svg class="popup-ask__icon" width="26" height="26">
                     <use xlink:href="./img/sprite.svg#icon-close"></use>
                 </svg> 
             </button>
-            <div class="popup__wrapper">
+            <div class="popup-ask__wrapper">
                 <div class="a">
-                    <h2 class="popup__title">Задайте вопрос менеджеру</h2>
-                    <form class="popup__form" action="#">
+                    <h2 class="popup-ask__title">Задайте вопрос менеджеру</h2>
+                    <form class="popup-ask__form" action="#">
                         <!-- При ошибке валидации добавить к input класс input--error -->
-                        <!-- Для вывода текста ошибки после input добавить тег p с классом popup__text-error -->
-                        <div class="popup__form-wrapper">
-                            <input class="popup__input input " maxlength="1478" type="text" placeholder="Ваше имя">
-                            <!-- <p class="popup__text-error ">Некорректно заполнено имя</p> -->
+                        <!-- Для вывода текста ошибки после input добавить тег p с классом popup-ask__text-error -->
+                        <div class="popup-ask__form-wrapper">
+                            <input class="popup-ask__input input " maxlength="1478" name="username" placeholder="Ваше имя">
+                            <!-- <p class="popup-ask__text-error ">Некорректно заполнено имя</p> -->
                         </div>
-                        <div class="popup__form-wrapper">
-                            <input class="popup__input input" maxlength="11" type="tel" placeholder="Ваш номер телефона">
-                            <!-- <p class="popup__text-error">Некорректно заполнен номер</p> -->
+                        <div class="popup-ask__form-wrapper">
+                            <input class="popup-ask__input input" maxlength="12" type="tel" placeholder="Ваш номер телефона">
+                            <!-- <p class="popup-ask__text-error">Некорректно заполнен номер</p> -->
                         </div>
-                        <div class="popup__form-wrapper">
-                            <textarea class="popup__input-message input" maxlength="999" placeholder="Ваше сообщение"></textarea>
+                        <div class="popup-ask__form-wrapper">
+                            <textarea class="popup-ask__input-message input" type="text" maxlength="999" placeholder="Ваше сообщение"></textarea>
                         </div>
-                        <button class="popup__send-btn" type="submit">Отправить сообщение</button>
-                        <div class="popup__checkbox checkbox__form">
-                            <input class="popup__checkbox-input checkbox__input" type="checkbox" checked id="checkbox-popup">
+                        <button class="popup-ask__send-btn" type="submit">Отправить сообщение</button>
+                        <div class="popup-ask__checkbox checkbox__form">
+                            <input class="popup-ask__checkbox-input checkbox__input" type="checkbox" checked id="checkbox-popup">
                             <!-- При ошибке валидации добавить к input класс checkbox__lable--error -->
-                            <label class="popup__checkbox-lable checkbox__lable" for="checkbox-popup" >Я согласен на <span>обработку персональных данных</span></label>
+                            <label class="popup-ask__checkbox-lable checkbox__lable" for="checkbox-popup" >Я согласен на <span>обработку персональных данных</span></label>
                         </div>
                     </form>
                 </div>
-                <div class="popup__specialist-card-wrapper">
+                <div class="popup-ask__specialist-card-wrapper">
                     <picture>
                         <source type="image/webp" media="(min-width: 1440px)" srcset="./img/human-desktop-interior.webp">
                         <source type="image/webp" media="(min-width: 886px)" srcset="./img/human-tablet-interior.webp">
                         <source media="(min-width: 1440px)" srcset="./img/human-desktop-interior.jpg">
                         <source media="(min-width: 886px)" srcset="./img/human-tablet-interior.jpg">
-                        <img class="popup__human" width="332" height="442" src="./img/human-mobile.jpg" alt="специалист">
+                        <img class="popup-ask__human" width="332" height="442" src="./img/human-mobile.jpg" alt="специалист">
                     </picture>
-                    <div class="popup__wrapper-card specialists-wrapper-card">
-                        <div class="popup__specialists specialists-card">
-                            <h3 class="popup__name specialists-name">Евгений Крайнов</h3>
-                            <p class="popup__about-specialist specialist-about">специалист по монтажу<br>стаж 12&nbsp;лет</p>
+                    <div class="popup-ask__wrapper-card specialists-wrapper-card">
+                        <div class="popup-ask__specialists specialists-card">
+                            <h3 class="popup-ask__name specialists-name">Евгений Крайнов</h3>
+                            <p class="popup-ask__about-specialist specialist-about">специалист по монтажу<br>стаж 12&nbsp;лет</p>
                         </div>
                     </div>
                 </div>

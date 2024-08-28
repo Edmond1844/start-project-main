@@ -73,8 +73,6 @@
 }
 
 .form-text () {
-    border-radius: 5px;
-
     outline:none;
 }
 
@@ -91,6 +89,8 @@
 .style-input-text () {
     border: 0;
     border: 1px solid @transparent-black;
+
+    border-radius: 5px;
 }
 
 .switch () {
@@ -114,6 +114,21 @@
     font-family: @main-font;
 
     resize: none;
+}
+
+.popup () {
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+
+    padding: 28px 14px 0 14px;
+
+    overflow: auto;
 }
 
 @media (min-width: @tablet-width) {
