@@ -47,11 +47,43 @@
 
     margin-bottom: 40px;
     
+}
 
-    span {
-        display: block;
+.section-work__title-more {
+    display: block;
 
-        color: @green;
+    color: @green;
+}
+
+.section-work__wrapper-more {
+    display: none;
+    position: relative;
+}
+
+.section-work__title-visit {
+    position: absolute;
+    top: -120px;
+    left: 675px;
+    
+    min-width: 200px;
+
+    padding: 15px 5px;
+
+    border-radius: 5px;
+    background-color: @transparent-black;
+
+    text-align: center;
+
+    font-family: @main-font;
+    font-size: 15px;
+    color: @black;
+
+    display: inline-block;
+    
+    text-decoration: none;
+
+    &:hover {
+        color: @gray-darker;
     }
 }
 
@@ -200,20 +232,12 @@
             font-size: 14px;
 
             width: 205px;
-
-        &--active {
-            background-color: @green;
-            color: @white;
-
-            &:not([disabled]):hover {
-                background-color: @green;
-            }
-        }
-
-        &:hover {
-            background-color: @gray;
-        }
     }
+
+    .section-work__items--active {
+        background-color: @green;
+    }
+    
 
     .section-work__subtitle {
         font-size: 16px;
