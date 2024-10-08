@@ -27,10 +27,23 @@ let buttons = document.querySelectorAll('.section-work__items');
 
 for (let button of buttons) {
         button.addEventListener('click', function() {
-        button.classList.toggle('section-work__items--active');
+            for (let btn of buttons) {
+                btn.classList.remove('section-work__items--active');
+            }
+        button.classList.add('section-work__items--active');
     });
 }
 
-// let span = document.querySelector('.section-work__title-more');
-// let visit = document.querySelector('.section-work__wrapper-more');
 
+let buttonOpenQuestions = document.querySelector('.section-questions-answers__expand-button');
+let questionsList = document.querySelector('.section-questions-answers__wrapper--none');
+
+buttonOpenQuestions.addEventListener('click', function() {
+    if(questionsList.classList.contains('section-questions-answers__wrapper--none')) {
+        buttonOpenQuestions.textContent = 'Свернуть список';
+        questionsList.classList.replace('section-questions-answers__wrapper--none', 'section-questions-answers__wrapper--visible');
+    } else {
+        buttonOpenQuestions.textContent = 'Смотреть все вопросы';
+        questionsList.classList.replace('section-questions-answers__wrapper--visible', 'section-questions-answers__wrapper--none');
+    }
+});
