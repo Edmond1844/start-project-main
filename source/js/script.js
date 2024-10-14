@@ -24,13 +24,24 @@ videoClose.addEventListener('click', function() {
 });
 
 let buttons = document.querySelectorAll('.section-work__items');
+let cards = document.querySelectorAll('.section-work__wrapper');
+let cardHidden = document.querySelector('.section-work__items--hidden');
 
 for (let button of buttons) {
         button.addEventListener('click', function() {
+            let target = button.getAttribute('data-target');
             for (let btn of buttons) {
                 btn.classList.remove('section-work__items--active');
             }
-        button.classList.add('section-work__items--active');
+            button.classList.add('section-work__items--active');
+            for (let card of cards) {
+                if (card.getAttribute('data-card') === target) {
+                    card.classList.add('section-work__wrapper--active-card');
+                } else {
+                    card.classList.remove('section-work__wrapper--active-card');
+                }
+            };
+            
     });
 }
 
